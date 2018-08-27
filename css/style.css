@@ -215,8 +215,28 @@ input: -webkit-autofill:focus {
     color: #43A906;
 }
 
-/*End of top header*/
 
+.custom_navbar-brand {
+   width: 100%;
+   height: auto;
+   padding-left: 0;
+}
+@media (min-width:999px){
+ .custom_navbar-brand {
+   width: 100%;
+   height: auto;
+   margin-top: 10px;
+   padding-left: 0;
+ }
+}
+@media (max-width:767px){
+ .custom_navbar-brand {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   padding-left: 0;
+ }
+}
 #header .header_menu {
     min-height: 80px;
     border-bottom: 1px solid #3D3E3D;
@@ -225,9 +245,7 @@ input: -webkit-autofill:focus {
 #header .header_menu .navbar {
     border: 0px solid transparent;
 }
-#header .header_menu .custom_navbar-brand {
-    padding-left: 0;
-}
+
 #header .header_menu .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
